@@ -1,0 +1,226 @@
+/* Laptops & Mobile */
+
+@media (max-width: 1280px) {
+    .header{
+
+        &__btns{
+            right: 15px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 768px;
+    } 
+
+    .header{
+        
+        &__top{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__logo{
+            margin: 0 0 30px;
+        }
+
+        &__btns{
+            position: relative;
+            top: auto;
+            right: auto;
+            transform: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+}   
+
+@media (max-width: 480px) { 
+
+    .header{
+
+        & header{
+            background: none;
+            padding: 50px 15px 30px;
+            box-sizing: border-box;
+        }
+
+        &__logo{
+            margin: 0 0 30px;
+        }
+
+        &__btns{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__btn{
+
+            & a{
+                width: 250px;
+                height: 50px;
+                max-height: 50px;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+                line-height: 120%;
+            }
+
+            &:first-child{
+                margin: 0 0 20px;
+            }
+        }
+
+        &__wrapper{
+            padding: 0 0 30px;
+        }
+
+        &__img{
+            margin: 0 auto 30px;
+        }
+
+        &__content{
+
+            & h1{
+                font-size: 36px;
+                line-height: 50px;
+                margin: 0 0 30px;
+                
+            }
+        }
+    }
+
+    .content{
+        padding: 30px 0 50px;
+
+        &__wrapper{
+
+            & h2{
+                font-size: 24px;
+                line-height: 40px;
+            }
+
+            & table{
+
+                & tr{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+
+                    & td{
+                        padding: 20px 10px;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+
+        &__img{
+            margin: 30px 0;
+        }
+
+        &__table_cols{
+
+            &_4,&_2{
+
+                & tr{
+
+                    & td{
+                        width: 50%;
+                        padding: 20px 10px;
+                        box-sizing: border-box;
+
+                        &:nth-child(odd){
+                            text-align: left;
+                        }
+
+                        &:nth-child(even){
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+@media (max-width: 320px) { 
+
+    .header{
+
+        &__content{
+
+            & h1{
+                font-size: 26px;
+                line-height: 140%;
+            }
+        }
+
+        &__link{
+
+            & a{
+                font-size: 18px;
+                line-height: 140%;
+            }
+        }
+    }
+
+    .content{
+
+        &__wrapper{
+
+            & p{
+                font-size: 18px;
+                line-height: 140%;
+            }
+
+            & ul,ol{
+                padding: 0 0 0 20px;
+
+                & li{
+                    font-size: 18px;
+                    line-height: 140%;
+                }
+            }
+
+            & h2{
+                font-size: 20px;
+                line-height: 140%;
+            }
+
+            & table{
+
+                & tr{
+
+                    & td{
+                        font-size: 15px;
+                        line-height: 140%;
+                        padding: 10px 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer{
+
+        &__wrapper{
+
+            & p{
+                font-size: 18px;
+                line-height: 140%;
+            }
+        }
+    }
+}
